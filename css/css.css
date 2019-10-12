@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: #555;
+}
+
+.montserrat {
+    font-family: Montserrat, sans-serif;
+}
+
+.grisClaro {
+    color: #F5F5F5
+}
+
+.grisOscuro {
+    color: #D3D3D3
+}
+
+.amarilloOscuro {
+    color: #F5AA34
+}
+
+.amarilloClaro {
+    color: #FBBA00
+}
+
+.azulFuerte {
+    color: #1F77B4
+}
+
+.azulMetalClaro {
+    color: #4f859e
+}
+
+.azulMetalOscuro {
+    color: #3a6b82
+}
+
+.texto {
+    color: #555555
+}
+
