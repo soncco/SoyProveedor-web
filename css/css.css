@@ -42,8 +42,6 @@ body {
     color: #555555
 }
 
-
-
 .pricing_table {
     line-height: 150%; 
     font-size: 12px; 
@@ -100,7 +98,7 @@ body {
     padding: 0;
     color: #555;
     background: white;
-    height: 350px
+    height: 150px
 }
 .features li {
     padding: 10px 20px;
@@ -163,7 +161,7 @@ div.footer {
     .price_block:nth-child(odd):hover {border: 0 none;}
 }
 @media only screen and (min-width : 768px){
-    .price_block {width: 33%;}
+    .price_block {width: 100%;}
     .price_block {border-right: 1px solid transparent; border-bottom: 0 none;}
     .price_block:last-child {border-right: 0 none;}
      
@@ -189,4 +187,8 @@ div.footer {
 
 footer.footer {
     text-align: center;
+}
+
+.resume {
+    color: #222;
 }
