@@ -95,6 +95,33 @@ body {
     box-shadow: none !important;
 }
 
+@media(max-width: 768px) {
+
+    .banner {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .banner .wrapper {
+        padding: 20px;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+
+    .banner .wrapper .text {
+        width: 100%;
+    }
+
+    .banner .wrapper .images {
+        position: relative;
+        width: 100%;
+    }
+}
+
 footer.footer {
     padding-top: 40px;
     text-align: center;
