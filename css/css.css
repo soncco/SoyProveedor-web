@@ -1,155 +1,162 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css');
-
 body {
-    font-family: Montserrat, sans-serif;
-    color: #555;
+  color: #555;
 }
 
 .montserrat {
-    font-family: Montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .raleway {
-    font-family: Raleway, sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 .grisClaro {
-    color: #F5F5F5
+  color: #f5f5f5;
 }
 
 .grisOscuro {
-    color: #D3D3D3
+  color: #d3d3d3;
 }
 
 .amarilloOscuro {
-    color: #F5AA34
+  color: #f5aa34;
 }
 
 .amarilloClaro {
-    color: #FBBA00
+  color: #fbba00;
 }
 
 .azulFuerte {
-    color: #1F77B4
+  color: #1f77b4;
 }
 
 .azulMetalClaro {
-    color: #4f859e
+  color: #4f859e;
 }
 
 .azulMetalOscuro {
-    color: #3a6b82
+  color: #3a6b82;
 }
 
 .texto {
-    color: #555555
+  color: #555555;
 }
 
 .banner {
-    background: rgb(58,107,130);
-    background: -moz-linear-gradient(90deg, rgba(58,107,130,1) 0%, rgba(79,133,158,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(58,107,130,1) 0%, rgba(79,133,158,1) 100%);
-    background: linear-gradient(90deg, rgba(58,107,130,1) 0%, rgba(79,133,158,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3a6b82",endColorstr="#4f859e",GradientType=1); 
-    height: 600px;
+  background: rgb(58, 107, 130);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(58, 107, 130, 1) 0%,
+    rgba(79, 133, 158, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(58, 107, 130, 1) 0%,
+    rgba(79, 133, 158, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(58, 107, 130, 1) 0%,
+    rgba(79, 133, 158, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3a6b82",endColorstr="#4f859e",GradientType=1);
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner .wrapper {
+  padding: 0 100px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.banner .wrapper .text {
+  color: white;
+  width: 520px;
+  margin-right: 100px;
+}
+
+.banner .wrapper .images {
+  position: relative;
+  width: calc(100% - 420px);
+}
+
+.banner .wrapper .iphone {
+  top: 50px;
+  right: 6.2%;
+  width: 277px;
+  z-index: 3;
+}
+
+.banner .wrapper .shadow {
+  top: 212px;
+  right: 0px;
+  width: 156px;
+  z-index: 2;
+  position: absolute;
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-}
-
-.banner .wrapper {
-    padding: 0 100px 0;
-    position: relative;
-    display: flex;
-    align-items: center;
+  }
+  .banner .wrapper {
+    padding: 20px;
+    flex-direction: column;
     margin: 0 auto;
-}
+    align-items: flex-start;
+  }
 
-.banner .wrapper .text {
-    color: white;
-    width: 520px;
-    margin-right: 100px;
-}
+  .banner .wrapper .text {
+    width: 100%;
+  }
 
-.banner .wrapper .images {
+  .banner .wrapper .images {
     position: relative;
-    width: calc(100% - 420px);
-}
-
-.banner .wrapper .iphone {
-    top:50px;
-    right:6.2%;
-    width:277px;
-    z-index:3;
-}
-
-.banner .wrapper .shadow {
-    top:212px;
-    right: 0px;
-    width: 156px;
-    z-index: 2;
-    position: absolute;
-    box-shadow: none !important;
-}
-
-@media(max-width: 768px) {
-
-    .banner {
-        height: auto;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    .banner .wrapper {
-        padding: 20px;
-        flex-direction: column;
-        margin: 0 auto;
-        align-items: flex-start;
-    }
-
-    .banner .wrapper .text {
-        width: 100%;
-    }
-
-    .banner .wrapper .images {
-        position: relative;
-        width: 100%;
-    }
+    width: 100%;
+  }
 }
 
 footer.footer {
-    padding-top: 40px;
-    text-align: center;
+  padding-top: 40px;
+  text-align: center;
 }
 
 .plan {
-    background: #fbfbfb;
-    padding: 50px 0;
+  background: #fbfbfb;
+  padding: 50px 0;
 }
 
 .plan h2 {
-    color: black;
+  color: black;
 }
 
 .plan-container {
-    text-align: center;
-    background: white;
-    padding: 40px 20px;
-    border-radius: 10px;
-    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.04);
+  text-align: center;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.04);
 }
 
 .plan-container .price {
-    font-size: 17px;
-    font-weight: bold;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .plan-container h3 {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
