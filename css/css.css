@@ -152,11 +152,65 @@ footer.footer {
 }
 
 .plan-container .price {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
+}
+
+.plan-container .price-alt {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: -8px;
 }
 
 .plan-container h3 {
   color: black;
   font-weight: bold;
+}
+
+.plan-container .benefits-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.plan-container .benefits-list li {
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.plan-container .benefits-list li::before {
+  content: "\2713";
+  color: #1f77b4;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.plan-premium {
+  border: 2px solid #1f77b4;
+}
+
+.cta-download {
+  background: linear-gradient(135deg, #3a6b82, #4f859e);
+  padding: 30px 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.cta-download .cta-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.cta-download .cta-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cta-download .cta-help {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 0;
 }
