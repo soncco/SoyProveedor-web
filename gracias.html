@@ -1,94 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="./css/css.css">
-    <meta name="description" content="Accede a oportunidades de negocio con entidades públicas de OSCE SEACE en tu celular.">
-    <meta property="og:title" content="Soy Proveedor: Recibe procesos SEACE en tu celular">
-    <meta property="og:site_name" content="Soy Proveedor">
-    <meta property="og:url" content="https://soyproveedor.abastecimiento.pe/">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://soyproveedor.abastecimiento.pe/images/og.png">
-    <meta property="og:image" content="https://soyproveedor.abastecimiento.pe/images/og2.png">
-    <meta property="og:image" content="https://soyproveedor.abastecimiento.pe/images/og3.png">
-    <meta property="og:image" content="https://soyproveedor.abastecimiento.pe/images/og4.png">
-    <meta property="fb:app_id" content="915534898793854">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="//iconsfavicon-16x16.png">
-    <link rel="manifest" href="/icons/site.webmanifest">
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#3a6b82">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QNS1TBV2V"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>¡Gracias por tu pago! — Soy Proveedor</title>
+    <meta name="theme-color" content="#3a6b82" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="icons/site.webmanifest" />
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#3a6b82" />
+    <meta name="msapplication-TileColor" content="#3a6b82" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-0QNS1TBV2V"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-0QNS1TBV2V');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-0QNS1TBV2V");
     </script>
-    <title>Soy Proveedor: Gracias por tu apoyo</title>
-</head>
-<body>
-    <div data-include="/includes/header.html"></div>
-    <div class="container">
-        <p class="text-center raleway"><img src="/images/logo.png" alt="Soy Proveedor" width="200"></p>
-        <h1 class="raleway text-center">
-            Soy <span class="azulFuerte">Proveedor</span>
-        </h1>
-
-        <h1 class="raleway text-center azulFuerte">Gracias por tu apoyo</h1>
-
-        <p>En unos minutos recibirás un correo confirmando tu pago, luego te recomendamos que inicies sesión nuevamente en la aplicación.</p>
-
-        <p>Si tienes preguntas escríbenos a <strong>soporte@abastecimiento.pe</strong> o llámanos al 940-413-610.</p>
-
-        <hr>
-
-        <div class="download text-center" id="download">
-            <p class=>Disponible en:</p>
-            <p>
-                <a href="https://apps.apple.com/us/app/soy-proveedor/id1483157249?l=es&ls=1"><img src="/images/appstore.svg" alt="Consíguelo en el APP Store" width="200"></a>
-            </p>
-            <p>
-                <a href='https://play.google.com/store/apps/details?id=pe.abastecimiento.negocio&hl=es&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponible en Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/es-419_badge_web_generic.png' width="230"/></a>
-            </p>
+  </head>
+  <body>
+    <header class="nav" id="nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand">
+          <img src="images/logo.png" class="brand-logo" alt="" />
+          <span>Soy Proveedor</span>
+        </a>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="index.html#funciones">Funciones</a>
+          <a href="index.html#capturas">Capturas</a>
+          <a href="index.html#planes">Planes</a>
+          <a href="index.html#equipo">Equipo</a>
+          <a href="index.html#faq">Preguntas</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="index.html#descargar" class="btn btn-accent btn-sm"
+            >Descargar app</a
+          >
         </div>
-    </div>
-    <hr>
-    <div data-include="/includes/footer.html"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <button class="nav-burger" id="burger" aria-label="Menú">
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#funciones">Funciones</a>
+        <a href="index.html#planes">Planes</a>
+        <a href="index.html#equipo">Equipo</a>
+        <a href="index.html#descargar" class="btn btn-accent">Descargar app</a>
+      </div>
+    </header>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5db3b0f5df22d91339a12110/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+    <main class="legal-page" style="text-align: center; max-width: 560px">
+      <div class="crumb" style="text-align: left">
+        <a href="index.html">Inicio</a> · Confirmación de pago
+      </div>
+
+      <div
+        style="
+          margin: 40px auto 32px;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background: #e6f7ee;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#1db954"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          width="40"
+          height="40"
+        >
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+
+      <h1 style="font-size: clamp(32px, 5vw, 52px)">
+        ¡Gracias por <em class="italic-accent">tu apoyo</em>!
+      </h1>
+
+      <p
+        style="
+          margin-top: 20px;
+          font-size: 17px;
+          color: var(--ink-2);
+          line-height: 1.6;
+        "
+      >
+        Tu pago fue recibido. En unos minutos recibirás un correo confirmando la
+        transacción. Te recomendamos iniciar sesión nuevamente en la app para
+        activar tu plan.
+      </p>
+
+      <p style="margin-top: 16px; color: var(--ink-2)">
+        ¿Tienes preguntas? Escríbenos a
+        <a href="mailto:soporte@soyproveedor.pe">soporte@soyproveedor.pe</a>
+        o llámanos al <a href="tel:940413610">940-413-610</a>.
+      </p>
+
+      <div
+        style="
+          margin-top: 48px;
+          padding-top: 40px;
+          border-top: 1px solid var(--line);
+        "
+      >
+        <p
+          style="
+            font-size: 13px;
+            color: var(--ink-2);
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+          "
+        >
+          Descarga la app
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+          "
+        >
+          <a
+            class="store-badge"
+            href="https://apps.apple.com/us/app/soy-proveedor/id1483157249?l=es&ls=1"
+            target="_blank"
+            rel="noopener"
+            aria-label="Descargar en App Store"
+          >
+            <svg
+              class="store-icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M16.4 12.5c0-2.6 2.1-3.9 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.3 2.5 1.3-.1 1.8-.9 3.4-.9 1.6 0 2 .9 3.4.9 1.4 0 2.3-1.2 3.2-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.8 5.1c.7-.9 1.2-2.1 1.1-3.4-1 .1-2.3.7-3 1.6-.7.8-1.3 2.1-1.1 3.3 1.2 0 2.3-.6 3-1.5z"
+              />
+            </svg>
+            <span class="store-text"
+              ><small>Descargar en</small><strong>App Store</strong></span
+            >
+          </a>
+          <a
+            class="store-badge"
+            href="https://play.google.com/store/apps/details?id=pe.abastecimiento.negocio&hl=es"
+            target="_blank"
+            rel="noopener"
+            aria-label="Disponible en Google Play"
+          >
+            <svg
+              class="store-icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M3.6 2.2c-.4.2-.6.6-.6 1.1v17.4c0 .5.2.9.6 1.1l9.7-9.8L3.6 2.2zM14.6 13.3l2.9 1.7-12.6 7.3 9.7-9zM18.7 9.5l-2.3 1.3-2.9-2.9 2.9-2.9 2.3 1.3c1.1.6 1.1 2 0 2.6zM5 1.7l12.6 7.3-2.9 1.7L5 1.7z"
+              />
+            </svg>
+            <span class="store-text"
+              ><small>Disponible en</small><strong>Google Play</strong></span
+            >
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top: 40px">
+        <a href="index.html" class="btn btn-accent">Volver al inicio</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="foot-grid">
+          <div>
+            <div class="brand">
+              <img src="images/logo.png" class="brand-logo" alt="" /> Soy
+              Proveedor
+            </div>
+            <p>La app GovTech para MYPEs que le venden al Estado peruano.</p>
+          </div>
+          <div>
+            <h4>Producto</h4>
+            <ul>
+              <li><a href="index.html#funciones">Funciones</a></li>
+              <li><a href="index.html#planes">Planes</a></li>
+              <li><a href="index.html#descargar">Descargar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="index.html#equipo">Equipo</a></li>
+              <li><a href="mailto:hola@soyproveedor.pe">Contacto</a></li>
+              <li>
+                <a
+                  href="https://wa.me/51940413610"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp</a
+                >
+              </li>
+              <li><a href="tel:940413610">940-413-610</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="terminos.html">Términos</a></li>
+              <li><a href="privacidad.html">Privacidad</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <div>
+            © 2026 Soy Proveedor · Hecho con orgullo en Cusco, Perú ·
+            <a href="https://innovacion.pe" target="_blank" rel="noopener"
+              >Innovación.pe</a
+            >
+          </div>
+          <div class="legal-links">
+            <a href="terminos.html">Términos</a>
+            <a href="privacidad.html">Privacidad</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const nav = document.getElementById("nav");
+      const onScroll = () =>
+        nav.classList.toggle("scrolled", window.scrollY > 8);
+      document.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+      document
+        .getElementById("burger")
+        ?.addEventListener("click", () =>
+          document.getElementById("mobileMenu").classList.toggle("open"),
+        );
     </script>
-    <script type="text/javascript">
-    Tawk_API = Tawk_API || {};
-    Tawk_API.visitor = {
-
-        name  : "Soy Proveedor"
-
-    };
-    </script>
-    <!--End of Tawk.to Script-->
-    <script src="/js/include.js"></script>
-</body>
+  </body>
 </html>
