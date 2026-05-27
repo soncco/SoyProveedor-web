@@ -1,227 +1,1492 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="./css/css.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Soy Proveedor — Vende más eficazmente al Estado peruano</title>
     <meta
       name="description"
-      content="Accede a oportunidades de negocio con entidades públicas de OSCE SEACE en tu celular."
+      content="Alertas SEACE, análisis de TDRs con IA, firma digital y rastreo SIAF — todo desde tu celular. La app GovTech para MYPEs que le venden al Estado peruano."
     />
-    <meta
-      property="og:title"
-      content="Soy Proveedor: Recibe procesos SEACE en tu celular"
-    />
-    <meta property="og:site_name" content="Soy Proveedor" />
-    <meta property="og:url" content="https://soyproveedor.abastecimiento.pe/" />
-    <meta property="og:description" content="" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://soyproveedor.abastecimiento.pe/images/og.png"
-    />
-    <meta
-      property="og:image"
-      content="https://soyproveedor.abastecimiento.pe/images/og2.png"
-    />
-    <meta
-      property="og:image"
-      content="https://soyproveedor.abastecimiento.pe/images/og3.png"
-    />
-    <meta
-      property="og:image"
-      content="https://soyproveedor.abastecimiento.pe/images/og4.png"
-    />
-    <meta property="fb:app_id" content="915534898793854" />
-
+    <meta name="theme-color" content="#3a6b82" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/icons/apple-touch-icon.png"
+      href="icons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/icons/favicon-32x32.png"
+      href="icons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="//iconsfavicon-16x16.png"
+      href="icons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/icons/site.webmanifest" />
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#3a6b82" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-0QNS1TBV2V"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-0QNS1TBV2V");
-    </script>
-    <title>Soy Proveedor: Seace, OSCE, Oportunidad de Negocio</title>
+    <link rel="manifest" href="icons/site.webmanifest" />
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#3a6b82" />
+    <meta name="msapplication-TileColor" content="#3a6b82" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div data-include="/includes/header.html"></div>
-
-    <div class="banner">
-      <div class="wrapper">
-        <div class="text">
-          <h1>
-            Soy <span class="amarilloOscuro">Proveedor</span> te ayuda a vender
-          </h1>
-          <p>
-            Encuentra rápidamente procesos del SEACE y OSCE, con Soy
-            <span class="amarilloOscuro">Proveedor</span> puedes venderle más
-            eficazmente al estado peruano.
-          </p>
-          <div class="download text-center" id="download">
-            <p>
-              <a href="https://apps.apple.com/pe/app/soy-proveedor/id1483157249"
-                ><img
-                  src="images/appstore.svg"
-                  alt="Consíguelo en el APP Store"
-                  width="200"
-              /></a>
-            </p>
-            <p>
-              <a
-                href="https://play.google.com/store/apps/details?id=pe.abastecimiento.osce&hl=es_PE"
-                ><img
-                  alt="Disponible en Google Play"
-                  src="https://play.google.com/intl/en_us/badges/static/images/badges/es-419_badge_web_generic.png"
-                  width="230"
-              /></a>
-            </p>
-          </div>
-        </div>
-        <div class="images">
+    <!-- =================== NAV =================== -->
+    <header class="nav" id="nav">
+      <div class="container nav-inner">
+        <a href="#" class="brand" aria-label="Soy Proveedor — inicio">
           <img
-            src="images/phonev2.png"
-            class="iphone"
-            alt="Soy Proveedor en el iPhone"
-            width="250"
-            style="
-              opacity: 1;
-              transform: translateY(-1.344px);
-              transition:
-                opacity 240ms ease 0s,
-                transform 60ms ease-in-out 0s;
-            "
+            src="images/logo.png"
+            class="brand-logo"
+            alt=""
+            aria-hidden="true"
           />
+          <span>Soy Proveedor</span>
+        </a>
+        <nav class="nav-links" aria-label="Principal">
+          <a href="#funciones">Funciones</a>
+          <a href="#capturas">Capturas</a>
+          <a href="#planes">Planes</a>
+          <a href="#equipo">Equipo</a>
+          <a href="#faq">Preguntas</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="#planes" class="btn btn-ghost btn-sm">Ver planes</a>
+          <a href="#descargar" class="btn btn-accent btn-sm">Probar gratis</a>
+        </div>
+        <button class="nav-burger" aria-label="Abrir menú" id="burger">
+          <span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#funciones">Funciones</a>
+        <a href="#capturas">Capturas</a>
+        <a href="#planes">Planes</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#descargar" class="btn btn-accent">Probar gratis</a>
+      </div>
+    </header>
+
+    <!-- =================== HERO =================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid reveal">
+          <div class="hero-content">
+            <div class="brand-line">Soy Proveedor® · GovTech para MYPEs</div>
+            <span class="pill">
+              <span class="pulse" aria-hidden="true"></span>
+              Disponible en iOS &amp; Android
+            </span>
+
+            <div class="hero-stack">
+              <h1
+                class="stack-title"
+                aria-label="Vende más eficazmente al Estado peruano."
+              >
+                <span>Vende</span>
+                <span class="gold">más</span>
+                <span class="gold">eficazmente</span>
+                <span style="color: #3a6b82">al Estado</span>
+                <span class="light" style="color: #3a6b82">peruano.</span>
+              </h1>
+            </div>
+
+            <p class="hero-sub">
+              La app que conecta tu MYPE con cada licitación, oportunidad y pago
+              del Estado peruano — desde el celular.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="store-badge"
+                href="https://apps.apple.com/pe/app/soy-proveedor/id1483157249"
+                aria-label="Descargar en App Store"
+              >
+                <svg
+                  class="store-icon"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M16.4 12.5c0-2.6 2.1-3.9 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.3 2.5 1.3-.1 1.8-.9 3.4-.9 1.6 0 2 .9 3.4.9 1.4 0 2.3-1.2 3.2-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.8 5.1c.7-.9 1.2-2.1 1.1-3.4-1 .1-2.3.7-3 1.6-.7.8-1.3 2.1-1.1 3.3 1.2 0 2.3-.6 3-1.5z"
+                  />
+                </svg>
+                <span class="store-text"
+                  ><small>Descargar en</small><strong>App Store</strong></span
+                >
+              </a>
+              <a
+                class="store-badge"
+                href="https://play.google.com/store/apps/details?id=pe.abastecimiento.osce&hl=es_PE"
+                aria-label="Disponible en Google Play"
+              >
+                <svg
+                  class="store-icon"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M3.6 2.2c-.4.2-.6.6-.6 1.1v17.4c0 .5.2.9.6 1.1l9.7-9.8L3.6 2.2zM14.6 13.3l2.9 1.7-12.6 7.3 9.7-9zM18.7 9.5l-2.3 1.3-2.9-2.9 2.9-2.9 2.3 1.3c1.1.6 1.1 2 0 2.6zM5 1.7l12.6 7.3-2.9 1.7L5 1.7z"
+                  />
+                </svg>
+                <span class="store-text"
+                  ><small>Disponible en</small
+                  ><strong>Google Play</strong></span
+                >
+              </a>
+            </div>
+
+            <div class="hero-meta">
+              <span>Prueba gratis · sin tarjeta</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span>Cancela cuando quieras</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span>Hecho en Cusco</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <aside class="float float-alert" aria-hidden="true">
+              <div class="row">
+                <span class="ico">!</span>
+                <div>
+                  <div class="ttl">Nueva oportunidad SEACE</div>
+                  <div class="meta">Cierra en 22h 04m · Cusco</div>
+                </div>
+              </div>
+            </aside>
+
+            <div
+              class="phone"
+              role="img"
+              aria-label="App Soy Proveedor mostrando oportunidades del SEACE"
+            >
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app">
+                  <div class="app-statusbar">
+                    <span>9:41</span>
+                    <span class="right">
+                      <span class="sig"><i></i><i></i><i></i><i></i></span>
+                      <span class="batt"><i></i></span>
+                    </span>
+                  </div>
+                  <div class="app-header">
+                    <div class="hello">Buen día, Jonás</div>
+                    <div class="title">Oportunidades</div>
+                    <div class="app-search">
+                      <span class="icon"></span
+                      ><span>Buscar RUC, entidad…</span>
+                    </div>
+                  </div>
+                  <div class="app-tabs">
+                    <span class="chip active">SEACE</span>
+                    <span class="chip">&lt; 8 UIT</span>
+                    <span class="chip">Favoritos</span>
+                  </div>
+                  <div class="app-list">
+                    <div class="app-card">
+                      <div class="row">
+                        <span class="tag urgent">Cierra en 22h</span
+                        ><span class="time">14:32</span>
+                      </div>
+                      <div class="title">Uniformes — UGEL Cusco</div>
+                      <div class="row">
+                        <span class="meta">CP-2026-014</span
+                        ><span class="amount">S/ 78,400</span>
+                      </div>
+                    </div>
+                    <div class="app-card">
+                      <div class="row">
+                        <span class="tag">&lt; 8 UIT</span
+                        ><span class="time">11:08</span>
+                      </div>
+                      <div class="title">Impresión — Wanchaq</div>
+                      <div class="row">
+                        <span class="meta">OC-2026-1042</span
+                        ><span class="amount">S/ 24,500</span>
+                      </div>
+                    </div>
+                    <div class="app-card">
+                      <div class="row">
+                        <span class="tag">Nuevo</span
+                        ><span class="time">09:50</span>
+                      </div>
+                      <div class="title">Mantenimiento — DRE Apurímac</div>
+                      <div class="row">
+                        <span class="meta">AS-2026-008</span
+                        ><span class="amount">S/ 52,900</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app-nav">
+                    <div class="ni active">
+                      <span class="ico"></span><span>Inicio</span>
+                    </div>
+                    <div class="ni">
+                      <span class="ico"></span><span>SIAF</span>
+                    </div>
+                    <div class="ni">
+                      <span class="ico"></span><span>IA</span>
+                    </div>
+                    <div class="ni">
+                      <span class="ico"></span><span>Perfil</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="float float-amount" aria-hidden="true">
+              <div class="lbl">SIAF · Devengado</div>
+              <div class="val">S/ 12,450.00</div>
+              <div class="bar"><i></i></div>
+            </aside>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="plan" id="planes">
+    <!-- =================== TRUST STRIP =================== -->
+    <section class="trust tighter" style="padding: 32px 0">
       <div class="container">
-        <h2 class="raleway text-center mb-3">Nuestros Planes</h2>
-        <p class="text-center mb-4">
-          <strong>Soy <span class="azulFuerte">Proveedor</span></strong>
-          proporciona la información esencial para todo proveedor del estado.
-          Elige el plan que mejor se adapte a tus necesidades.
-        </p>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <div class="plan-container h-100">
-              <h3 class="title mb-3">Plan Gratis</h3>
-              <p class="price azulFuerte">S/. 0.00</p>
-              <ul class="benefits-list text-start">
-                <li>Máximo 10 resultados por búsqueda</li>
-                <li>Máximo 3 búsquedas guardadas</li>
-                <li>Máximo 10 favoritos</li>
-                <li>Máximo 5 consultas SIAF por día</li>
-                <li>Máximo 3 expedientes SIAF favoritos</li>
-                <li>Anuncios en la aplicación</li>
-              </ul>
-            </div>
+        <div class="trust-inner">
+          <div class="label">Conectado con</div>
+          <div class="badges">
+            <span class="badge"><span class="mk">SE</span>SEACE</span>
+            <span class="badge"><span class="mk">OS</span>OSCE</span>
+            <span class="badge"><span class="mk">SI</span>SIAF</span>
+            <span class="badge"><span class="mk accent">RN</span>RNP</span>
+            <span class="badge"><span class="mk">MEF</span>MEF Perú</span>
           </div>
-          <div class="col-md-6 mb-3">
-            <div class="plan-container plan-premium h-100">
-              <h3 class="title mb-3">Plan Premium</h3>
-              <p class="price azulFuerte">S/. 29.90 por mes</p>
-              <p class="price-alt azulFuerte">o S/. 199.90 por año</p>
-              <ul class="benefits-list text-start">
-                <li>Resultados ilimitados en búsquedas</li>
-                <li>Búsquedas guardadas ilimitadas</li>
-                <li>Favoritos ilimitados</li>
-                <li>Consultas SIAF ilimitadas</li>
-                <li>Expedientes SIAF favoritos ilimitados</li>
-                <li>Sin anuncios</li>
-                <li>Soporte prioritario</li>
-              </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== FEATURES (alternating splits) =================== -->
+    <section id="funciones" style="padding-top: 96px">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Funciones principales</span>
+          <h2>
+            De la alerta <em class="italic-accent">al pago</em>. Todo en una
+            app.
+          </h2>
+          <p class="lede">
+            Cuatro funcionalidades, un solo ciclo. La primera app GovTech que
+            cubre todo lo que una MYPE necesita para venderle al Estado peruano,
+            sin abrir la laptop.
+          </p>
+        </div>
+      </div>
+
+      <!-- Feature 1: Alertas SEACE -->
+      <div class="container" style="margin-bottom: 120px">
+        <div class="feat-split reveal">
+          <div class="copy">
+            <span class="badge-tag">EN VIVO</span>
+            <span class="eyebrow">01 / Alertas SEACE</span>
+            <h2 style="margin-top: 18px">
+              Nunca pierdas <em class="italic-accent">una convocatoria</em>.
+            </h2>
+            <p style="margin-top: 20px">
+              Notificaciones push de cada oportunidad relevante para tu MYPE —
+              incluyendo adjudicaciones menores a 8 UIT que casi nadie
+              monitorea. Filtros por rubro, monto y entidad.
+            </p>
+            <ul class="bullets">
+              <li>Alertas push en segundos, no en días</li>
+              <li>Cobertura SEACE + OSCE + adjudicaciones menores a 8 UIT</li>
+              <li>Filtros por rubro, región, entidad y rango de monto</li>
+              <li>Búsquedas guardadas que se actualizan solas</li>
+            </ul>
+          </div>
+
+          <div class="visual bg-cream">
+            <div class="viz-tag" style="top: 8%; left: 6%">
+              <div class="lbl">Alertas hoy</div>
+              <div class="val">14 nuevas</div>
+            </div>
+            <div class="viz-tag" style="bottom: 10%; right: 6%">
+              <div class="lbl">Tu rubro</div>
+              <div class="val">Construcción</div>
+            </div>
+
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app">
+                  <div class="app-statusbar">
+                    <span>9:41</span
+                    ><span class="right"
+                      ><span class="sig"><i></i><i></i><i></i><i></i></span
+                      ><span class="batt"><i></i></span
+                    ></span>
+                  </div>
+                  <div class="app-header">
+                    <div class="hello">Buen día, Jonás</div>
+                    <div class="title">Oportunidades</div>
+                    <div class="app-search">
+                      <span class="icon"></span
+                      ><span>Buscar RUC, entidad…</span>
+                    </div>
+                  </div>
+                  <div class="app-tabs">
+                    <span class="chip active">SEACE</span
+                    ><span class="chip">&lt; 8 UIT</span
+                    ><span class="chip">Favoritos</span>
+                  </div>
+                  <div class="app-list">
+                    <div class="app-card">
+                      <div class="row">
+                        <span class="tag urgent">Cierra en 22h</span
+                        ><span class="time">14:32</span>
+                      </div>
+                      <div class="title">Uniformes — UGEL Cusco</div>
+                      <div class="row">
+                        <span class="meta">CP-2026-014</span
+                        ><span class="amount">S/ 78,400</span>
+                      </div>
+                    </div>
+                    <div class="app-card">
+                      <div class="row">
+                        <span class="tag">&lt; 8 UIT</span
+                        ><span class="time">11:08</span>
+                      </div>
+                      <div class="title">Impresión — Wanchaq</div>
+                      <div class="row">
+                        <span class="meta">OC-2026-1042</span
+                        ><span class="amount">S/ 24,500</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app-nav">
+                    <div class="ni active">
+                      <span class="ico"></span><span>Inicio</span>
+                    </div>
+                    <div class="ni">
+                      <span class="ico"></span><span>SIAF</span>
+                    </div>
+                    <div class="ni">
+                      <span class="ico"></span><span>IA</span>
+                    </div>
+                    <div class="ni">
+                      <span class="ico"></span><span>Perfil</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="cta-download text-center mt-4">
-          <p class="cta-text">
-            Descarga la app y activa tu plan Premium desde la aplicación
+      </div>
+
+      <!-- Feature 2: SIAF Tracker -->
+      <div class="container" style="margin-bottom: 120px">
+        <div class="feat-split reverse reveal">
+          <div class="copy">
+            <span class="badge-tag">EN VIVO</span>
+            <span class="eyebrow">02 / SIAF Tracker</span>
+            <h2 style="margin-top: 18px">
+              Sigue cada pago <em class="italic-accent">en tiempo real</em>.
+            </h2>
+            <p style="margin-top: 20px">
+              De compromiso a girado. Consulta el estado real de tu expediente
+              SIAF sin pasar por mesa de partes ni llamar a contabilidad. Sabes
+              exactamente cuándo cobrar.
+            </p>
+            <ul class="bullets">
+              <li>
+                5 estados: certificación, compromiso, devengado, girado, pagado
+              </li>
+              <li>Expedientes favoritos para seguimiento permanente</li>
+              <li>Histórico mensual y anual por entidad</li>
+              <li>Alertas cuando cambia el estado</li>
+            </ul>
+          </div>
+
+          <div class="visual bg-deep">
+            <div class="viz-tag" style="top: 8%; right: 6%">
+              <div class="lbl">Estado actual</div>
+              <div class="val">Devengado</div>
+            </div>
+            <div class="viz-tag" style="bottom: 12%; left: 6%">
+              <div class="lbl">Por cobrar</div>
+              <div class="val">S/ 12,450</div>
+            </div>
+
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app screen-tracker">
+                  <div class="label">SIAF · Expediente 2026-001847</div>
+                  <div class="num">S/ 12,450.00</div>
+                  <div class="ent">UGEL Cusco · Servicios profesionales</div>
+                  <div class="timeline">
+                    <div class="ti done">
+                      <span class="icon">✓</span>
+                      <div class="body">
+                        <div class="t">Certificación</div>
+                        <div class="d">02 mar · MEF</div>
+                      </div>
+                    </div>
+                    <div class="ti done">
+                      <span class="icon">✓</span>
+                      <div class="body">
+                        <div class="t">Compromiso</div>
+                        <div class="d">15 mar · UGEL</div>
+                      </div>
+                    </div>
+                    <div class="ti current">
+                      <span class="icon">3</span>
+                      <div class="body">
+                        <div class="t">Devengado</div>
+                        <div class="d">En proceso</div>
+                      </div>
+                    </div>
+                    <div class="ti">
+                      <span class="icon">4</span>
+                      <div class="body">
+                        <div class="t">Girado</div>
+                        <div class="d">Pendiente</div>
+                      </div>
+                    </div>
+                    <div class="ti">
+                      <span class="icon">5</span>
+                      <div class="body">
+                        <div class="t">Pagado</div>
+                        <div class="d">Pendiente</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3: AI -->
+      <div class="container" style="margin-bottom: 120px">
+        <div class="feat-split reveal">
+          <div class="copy">
+            <span class="badge-tag next">PRÓXIMO</span>
+            <span class="eyebrow">03 / Asistente IA</span>
+            <h2 style="margin-top: 18px">
+              Entiende cualquier TDR <em class="italic-accent">en segundos</em>.
+            </h2>
+            <p style="margin-top: 20px">
+              Sube las bases, el TDR o los anexos. La IA resume requisitos,
+              identifica riesgos y evalúa si tu propuesta cumple.
+              Conversacional, en español, hecho para el Estado peruano.
+            </p>
+            <ul class="bullets">
+              <li>Análisis de TDRs de hasta 40 páginas en segundos</li>
+              <li>Resumen de requisitos técnicos y económicos</li>
+              <li>Evaluación de cumplimiento de tu propuesta</li>
+              <li>Chat en español, entrenado con normativa peruana</li>
+            </ul>
+          </div>
+
+          <div class="visual bg-gold">
+            <div class="viz-tag" style="top: 10%; left: 6%">
+              <div class="lbl">TDR analizado</div>
+              <div class="val">38 páginas</div>
+            </div>
+            <div class="viz-tag" style="bottom: 10%; right: 6%">
+              <div class="lbl">Tu cumplimiento</div>
+              <div class="val">87 %</div>
+            </div>
+
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app screen-ai">
+                  <div class="head">
+                    Asistente IA<small>TDR-2026-014 · UGEL Cusco</small>
+                  </div>
+                  <div class="b a">
+                    ¡Hola! He leído las 38 páginas del TDR. ¿Qué quieres saber?
+                  </div>
+                  <div class="b u">¿Cumplo los requisitos?</div>
+                  <div class="b a">
+                    <strong>Sí, en un 87%.</strong> Te falta certificado ISO
+                    9001. Es opcional pero suma 5 puntos.
+                  </div>
+                  <div class="b u">¿Cuándo cierra?</div>
+                  <div class="b a">
+                    Mañana <strong>14 mar a las 17:00</strong>. Te quedan
+                    <strong>22h</strong>.
+                  </div>
+                  <div class="input">
+                    <span>Pregunta lo que necesites…</span
+                    ><span class="send">↑</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4: Firma -->
+      <div class="container">
+        <div class="feat-split reverse reveal">
+          <div class="copy">
+            <span class="badge-tag next">PRÓXIMO</span>
+            <span class="eyebrow">04 / Firma Digital</span>
+            <h2 style="margin-top: 18px">
+              Firma propuestas <em class="italic-accent">desde el celular</em>.
+            </h2>
+            <p style="margin-top: 20px">
+              Pasarela de firma digital integrada con validez legal —
+              equivalente a una firma manuscrita ante notario. Firma desde el
+              colectivo, la obra o entre reunión y reunión.
+            </p>
+            <ul class="bullets">
+              <li>Validez legal conforme a la Ley N° 27269</li>
+              <li>Certificado digital emitido en minutos</li>
+              <li>Trazabilidad y sello de tiempo</li>
+              <li>Compatible con propuestas, anexos y declaraciones juradas</li>
+            </ul>
+          </div>
+
+          <div class="visual bg-cool">
+            <div class="viz-tag" style="top: 8%; right: 6%">
+              <div class="lbl">Validez legal</div>
+              <div class="val">Ley 27269</div>
+            </div>
+
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app screen-sign">
+                  <div class="doc">
+                    <div class="h">Propuesta económica</div>
+                    <i></i><i></i><i></i><i class="short"></i> <i></i><i></i
+                    ><i class="short"></i> <i></i><i></i><i></i
+                    ><i class="short"></i>
+                    <div class="sigBlock">
+                      _____________________<br />Jonás Coaquira · DNI 41xxxxxx
+                    </div>
+                    <div class="stamp">FIRMADO<br />14·MAR·26</div>
+                  </div>
+                  <div class="sign-cta">Firmar con certificado digital</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== MORE FUNCTIONS GRID =================== -->
+    <section style="background: var(--surface); padding: 96px 0">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Y además</span>
+          <h2 style="font-size: clamp(36px, 5vw, 64px)">
+            Más herramientas <em class="italic-accent">en la app</em>.
+          </h2>
+          <p class="lede">Pequeñas mejoras que suman horas al mes.</p>
+        </div>
+
+        <div class="more-grid reveal">
+          <div class="more-card">
+            <span class="num">/ 01</span>
+            <h4>Búsquedas guardadas</h4>
+            <p>
+              Define una vez tus criterios y recibe las nuevas oportunidades que
+              calcen, sin volver a buscar.
+            </p>
+          </div>
+          <div class="more-card">
+            <span class="num">/ 02</span>
+            <h4>Favoritos ilimitados</h4>
+            <p>
+              Guarda procesos y expedientes para seguir su evolución sin perder
+              de vista los detalles.
+            </p>
+          </div>
+          <div class="more-card">
+            <span class="num">/ 03</span>
+            <h4>Histórico SIAF</h4>
+            <p>
+              Consulta el comportamiento de pago de cada entidad antes de
+              presentar una propuesta.
+            </p>
+          </div>
+          <div class="more-card">
+            <span class="num">/ 04</span>
+            <h4>Cero anuncios</h4>
+            <p>
+              En el plan Premium, ninguna publicidad ni interrupciones. Solo tu
+              información, limpia.
+            </p>
+          </div>
+          <div class="more-card">
+            <span class="num">/ 05</span>
+            <h4>Soporte prioritario</h4>
+            <p>
+              Atención por WhatsApp y correo en menos de 24 horas, de lunes a
+              sábado.
+            </p>
+          </div>
+          <div class="more-card">
+            <span class="num">/ 06</span>
+            <h4>Modo sin conexión</h4>
+            <p>
+              Lee tus oportunidades y expedientes guardados aunque pierdas señal
+              en el camino.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== CAPTURAS RAIL =================== -->
+    <section id="capturas" class="shots-section">
+      <div class="container">
+        <div class="section-head reveal" style="margin-bottom: 0">
+          <span class="eyebrow">Capturas</span>
+          <h2 style="font-size: clamp(40px, 6vw, 80px)">
+            Así se ve <em class="italic-accent">en tu bolsillo</em>.
+          </h2>
+          <p class="lede">
+            Diseñada para usarse desde un colectivo, una obra o entre reunión y
+            reunión. Flujos rápidos, lectura clara, cero ruido.
           </p>
-          <div class="cta-badges">
-            <a href="https://apps.apple.com/pe/app/soy-proveedor/id1483157249">
-              <img
-                src="images/appstore.svg"
-                alt="Consíguelo en el APP Store"
-                width="180"
-              />
+        </div>
+
+        <div
+          class="shots-rail"
+          id="shotsRail"
+          tabindex="0"
+          aria-label="Capturas de pantalla de la app"
+        >
+          <!-- Shot 1 -->
+          <div class="shot">
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app">
+                  <div class="app-statusbar">
+                    <span>9:41</span
+                    ><span class="right"
+                      ><span class="sig"><i></i><i></i><i></i><i></i></span
+                      ><span class="batt"><i></i></span
+                    ></span>
+                  </div>
+                  <div class="app-header">
+                    <div class="hello">Buen día, Jonás</div>
+                    <div class="title">Oportunidades</div>
+                    <div class="app-search">
+                      <span class="icon"></span
+                      ><span>Buscar RUC, entidad…</span>
+                    </div>
+                  </div>
+                  <div class="app-tabs">
+                    <span class="chip active">SEACE</span
+                    ><span class="chip">&lt; 8 UIT</span
+                    ><span class="chip">Favoritos</span>
+                  </div>
+                  <div class="app-list">
+                    <div class="app-card">
+                      <div class="row">
+                        <span class="tag urgent">Cierra en 22h</span
+                        ><span class="time">14:32</span>
+                      </div>
+                      <div class="title">Uniformes — UGEL Cusco</div>
+                      <div class="row">
+                        <span class="meta">CP-2026-014</span
+                        ><span class="amount">S/ 78,400</span>
+                      </div>
+                    </div>
+                    <div class="app-card">
+                      <div class="row">
+                        <span class="tag">&lt; 8 UIT</span
+                        ><span class="time">11:08</span>
+                      </div>
+                      <div class="title">Impresión — Wanchaq</div>
+                      <div class="row">
+                        <span class="meta">OC-2026-1042</span
+                        ><span class="amount">S/ 24,500</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="app-nav">
+                    <div class="ni active">
+                      <span class="ico"></span><span>Inicio</span>
+                    </div>
+                    <div class="ni">
+                      <span class="ico"></span><span>SIAF</span>
+                    </div>
+                    <div class="ni">
+                      <span class="ico"></span><span>IA</span>
+                    </div>
+                    <div class="ni">
+                      <span class="ico"></span><span>Perfil</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <strong><span class="n">01</span>Oportunidades</strong>Feed en
+              tiempo real con filtros por rubro y monto.
+            </div>
+          </div>
+
+          <!-- Shot 2 -->
+          <div class="shot">
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app screen-tracker">
+                  <div class="label">SIAF · Expediente</div>
+                  <div class="num">S/ 12,450.00</div>
+                  <div class="ent">UGEL Cusco · Servicios</div>
+                  <div class="timeline">
+                    <div class="ti done">
+                      <span class="icon">✓</span>
+                      <div class="body">
+                        <div class="t">Certificación</div>
+                        <div class="d">02 mar</div>
+                      </div>
+                    </div>
+                    <div class="ti done">
+                      <span class="icon">✓</span>
+                      <div class="body">
+                        <div class="t">Compromiso</div>
+                        <div class="d">15 mar</div>
+                      </div>
+                    </div>
+                    <div class="ti current">
+                      <span class="icon">3</span>
+                      <div class="body">
+                        <div class="t">Devengado</div>
+                        <div class="d">En proceso</div>
+                      </div>
+                    </div>
+                    <div class="ti">
+                      <span class="icon">4</span>
+                      <div class="body">
+                        <div class="t">Girado</div>
+                        <div class="d">Pendiente</div>
+                      </div>
+                    </div>
+                    <div class="ti">
+                      <span class="icon">5</span>
+                      <div class="body">
+                        <div class="t">Pagado</div>
+                        <div class="d">Pendiente</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <strong><span class="n">02</span>SIAF Tracker</strong>Sigue tus
+              pagos paso a paso, sin llamadas.
+            </div>
+          </div>
+
+          <!-- Shot 3 -->
+          <div class="shot">
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app screen-ai">
+                  <div class="head">
+                    Asistente IA<small>TDR-2026-014 · UGEL Cusco</small>
+                  </div>
+                  <div class="b a">
+                    ¡Hola! He leído las 38 páginas del TDR. ¿Qué quieres saber?
+                  </div>
+                  <div class="b u">¿Cumplo los requisitos?</div>
+                  <div class="b a">
+                    <strong>Sí, en un 87%.</strong> Falta ISO 9001 — opcional,
+                    suma 5 puntos.
+                  </div>
+                  <div class="b u">¿Cuándo cierra?</div>
+                  <div class="b a">
+                    Mañana <strong>14 mar 17:00</strong>. Te quedan
+                    <strong>22h</strong>.
+                  </div>
+                  <div class="input">
+                    <span>Pregunta lo que necesites…</span
+                    ><span class="send">↑</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <strong><span class="n">03</span>Asistente IA</strong>Pregúntale
+              al TDR en lenguaje natural.
+            </div>
+          </div>
+
+          <!-- Shot 4 -->
+          <div class="shot">
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app screen-sign">
+                  <div class="doc">
+                    <div class="h">Propuesta económica</div>
+                    <i></i><i></i><i></i><i class="short"></i> <i></i><i></i
+                    ><i class="short"></i> <i></i><i></i><i></i
+                    ><i class="short"></i>
+                    <div class="sigBlock">
+                      _____________________<br />Jonás Coaquira · DNI 41xxxxxx
+                    </div>
+                    <div class="stamp">FIRMADO<br />14·MAR·26</div>
+                  </div>
+                  <div class="sign-cta">Firmar con certificado digital</div>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <strong><span class="n">04</span>Firma Digital</strong>Validez
+              legal, desde el celular.
+            </div>
+          </div>
+
+          <!-- Shot 5 -->
+          <div class="shot">
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
+                <div class="app screen-plan">
+                  <div class="label">Mi cuenta</div>
+                  <div class="ttl">Plan Premium</div>
+                  <div class="premium-card">
+                    <div class="badge">PREMIUM ACTIVO</div>
+                    <div class="price">
+                      S/ 199.90<span
+                        style="
+                          font-size: 13px;
+                          opacity: 0.7;
+                          font-weight: 500;
+                          margin-left: 4px;
+                        "
+                        >/año</span
+                      >
+                    </div>
+                    <div class="meta">Renueva el 12 feb 2027</div>
+                  </div>
+                  <div class="row">
+                    <span>Búsquedas guardadas</span><strong>Ilimitadas</strong>
+                  </div>
+                  <div class="row">
+                    <span>Consultas SIAF</span><strong>Ilimitadas</strong>
+                  </div>
+                  <div class="row">
+                    <span>Anuncios</span><strong>Sin anuncios</strong>
+                  </div>
+                  <div class="row">
+                    <span>Soporte</span><strong>Prioritario</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caption">
+              <strong><span class="n">05</span>Mi Plan</strong>Premium activo,
+              todo en un solo lugar.
+            </div>
+          </div>
+        </div>
+
+        <div class="shots-controls">
+          <button id="shotPrev" aria-label="Anterior">←</button>
+          <button id="shotNext" aria-label="Siguiente">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== BENEFICIOS (reemplaza Tracción) =================== -->
+    <section>
+      <div class="container">
+        <div class="benefits-panel reveal">
+          <div class="benefits-head">
+            <div>
+              <span class="eyebrow">Por qué descargarla</span>
+              <h2 style="margin-top: 20px; font-size: clamp(40px, 5.5vw, 76px)">
+                Lo que <em class="italic-accent">ganas</em> con la app.
+              </h2>
+            </div>
+            <p>
+              Soy Proveedor no es un canal de noticias del SEACE. Es la
+              herramienta operativa que reemplaza las llamadas a contabilidad,
+              el monitoreo manual del portal y las hojas de cálculo que te
+              llevan medio sábado.
+            </p>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="bcard bcard-blue">
+              <div class="bcard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                </svg>
+              </div>
+              <h3>Más oportunidades, menos vigilancia.</h3>
+              <p>
+                Recibe en tu celular cada convocatoria que calza con tu rubro.
+                Incluyendo las contrataciones menores a 8 UIT que casi nadie
+                monitorea — donde está la mayoría de la plata para MYPEs.
+              </p>
+              <div class="bcard-foot">100% del SEACE · &lt; 8 UIT incluido</div>
+            </article>
+
+            <article class="bcard bcard-gold">
+              <div class="bcard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <h3>Horas devueltas a tu semana.</h3>
+              <p>
+                Deja de entrar al SEACE cada par de horas y de llamar a
+                contabilidad por el estado de cada expediente. La app lo hace
+                por ti, en segundo plano, mientras tú haces lo que sí mueve la
+                facturación.
+              </p>
+              <div class="bcard-foot">
+                Sin laptop · sin llamadas · sin sábados
+              </div>
+            </article>
+
+            <article class="bcard bcard-navy">
+              <div class="bcard-icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                  <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+              </div>
+              <h3>Cobranzas sin sorpresas.</h3>
+              <p>
+                Sigue cada expediente SIAF de compromiso a pagado. Sabes qué
+                entidad demora, qué pago está por caer y cómo proyectar tu flujo
+                de caja con datos del MEF en lugar de promesas.
+              </p>
+              <div class="bcard-foot">Estado real · histórico por entidad</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== TESTIMONIOS =================== -->
+    <section style="background: var(--surface-cool); padding: 96px 0">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Voces de la cancha</span>
+          <h2 style="font-size: clamp(36px, 5vw, 64px)">
+            Lo que dicen <em class="italic-accent">nuestros usuarios</em>.
+          </h2>
+        </div>
+
+        <div class="testi-grid reveal">
+          <article class="testi">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <blockquote>
+              Antes revisaba el SEACE tres veces al día y aun así perdía
+              convocatorias. Ahora me llega la alerta y respondo desde el
+              celular en la misma mañana.
+            </blockquote>
+            <div class="author">
+              <div class="av">MR</div>
+              <div class="who">
+                <strong>M. Rojas</strong
+                ><span>Proveedora de servicios · Cusco</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <blockquote>
+              El SIAF Tracker me ahorra como tres llamadas a la semana a
+              contabilidad. Veo en qué etapa está mi expediente y me organizo el
+              flujo de caja.
+            </blockquote>
+            <div class="author">
+              <div class="av">JC</div>
+              <div class="who">
+                <strong>J. Ccama</strong
+                ><span>MYPE de construcción · Wanchaq</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi">
+            <div class="quote-mark" aria-hidden="true">"</div>
+            <blockquote>
+              Por S/ 199 al año tengo más información que la que sacaba pagando
+              un asistente. Para una MYPE chica como la mía, hace la diferencia
+              entre vender o no.
+            </blockquote>
+            <div class="author">
+              <div class="av">LH</div>
+              <div class="who">
+                <strong>L. Huamán</strong
+                ><span>Suministros de oficina · San Sebastián</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== EQUIPO =================== -->
+    <section id="equipo">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">El equipo</span>
+          <h2 style="font-size: clamp(40px, 6vw, 80px)">
+            Conocemos el problema <em class="italic-accent">desde adentro</em>.
+          </h2>
+          <p class="lede">
+            16 años en gestión pública y desarrollo de tecnología que sí se usa
+            dentro del Estado peruano.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <article class="member reveal">
+            <div class="photo-slot"><span>JC</span></div>
+            <div>
+              <div class="role">CEO &amp; Cofundador</div>
+              <h3>Jonás Coaquira</h3>
+              <p>
+                16 años en gestión pública. Diseñó las directivas de
+                contrataciones menores a 8 UIT en municipalidades del Cusco.
+                Conoce cada eslabón del proceso desde la entidad estatal.
+              </p>
+            </div>
+            <div class="creds">
+              <span>Gestión pública</span>
+              <span>Contrataciones &lt; 8 UIT</span>
+              <span>Cusco</span>
+            </div>
+          </article>
+
+          <article class="member reveal">
+            <div class="photo-slot"><span>BS</span></div>
+            <div>
+              <div class="role">CTO &amp; Cofundador</div>
+              <h3>Braulio Soncco</h3>
+              <p>
+                Desarrolló GRACE, una plataforma operativa hoy en 20 entidades
+                públicas del país. Más de una década construyendo software que
+                sí se usa adentro de la administración.
+              </p>
+            </div>
+            <div class="creds">
+              <span>GRACE · 20 entidades</span>
+              <span>GovTech</span>
+              <span>Backend &amp; IA</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== PLANES =================== -->
+    <section id="planes" style="background: var(--surface); padding: 96px 0">
+      <div class="container">
+        <div
+          class="section-head reveal"
+          style="max-width: none; text-align: center"
+        >
+          <span class="eyebrow" style="justify-content: center">Planes</span>
+          <h2 style="font-size: clamp(40px, 6vw, 80px)">
+            Empieza gratis. <em class="italic-accent">Crece</em> cuando estés
+            listo.
+          </h2>
+          <p class="lede" style="margin: 20px auto 0">
+            Sin contratos largos. Cancela cuando quieras desde la app.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="plan reveal">
+            <h3>Plan Gratis</h3>
+            <p>
+              Para conocer cómo funciona y monitorear oportunidades puntuales.
+            </p>
+            <div class="price">
+              <span class="currency">S/</span>0<small>/ siempre</small>
+            </div>
+            <ul>
+              <li>Hasta 10 resultados por búsqueda</li>
+              <li>Hasta 3 búsquedas guardadas</li>
+              <li>Hasta 10 favoritos</li>
+              <li>5 consultas SIAF por día</li>
+              <li>3 expedientes SIAF favoritos</li>
+              <li>Anuncios en la aplicación</li>
+            </ul>
+            <div class="plan-cta">
+              <a href="#descargar" class="btn btn-ghost">Descargar gratis</a>
+            </div>
+          </article>
+
+          <article class="plan featured reveal">
+            <span class="ft-tag">Recomendado</span>
+            <h3>Plan Premium</h3>
+            <p>
+              Para MYPEs que viven de venderle al Estado y necesitan toda la
+              información, todo el tiempo.
+            </p>
+            <div class="price">
+              <span class="currency">S/</span>29.90<small>/ mes</small>
+            </div>
+            <div class="price-yearly">
+              o <strong>S/ 199.90 al año</strong> — ahorras 44%
+            </div>
+            <ul>
+              <li>Resultados ilimitados</li>
+              <li>Búsquedas guardadas ilimitadas</li>
+              <li>Favoritos ilimitados</li>
+              <li>Consultas SIAF ilimitadas</li>
+              <li>Expedientes SIAF favoritos ilimitados</li>
+              <li>Sin anuncios</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <div class="plan-cta">
+              <a href="#descargar" class="btn btn-accent">Activar Premium</a>
+            </div>
+          </article>
+        </div>
+
+        <p
+          style="
+            text-align: center;
+            margin-top: 32px;
+            font-size: 13px;
+            color: var(--ink-2);
+          "
+        >
+          Descarga la app y activa tu plan Premium desde la aplicación.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================== FAQ =================== -->
+    <section id="faq">
+      <div class="container">
+        <div class="faq-grid">
+          <div class="reveal">
+            <span class="eyebrow">Preguntas</span>
+            <h2 style="margin-top: 20px; font-size: clamp(36px, 4.5vw, 60px)">
+              Lo que más <em class="italic-accent">nos preguntan</em>.
+            </h2>
+            <p style="margin-top: 20px">
+              ¿No encuentras tu respuesta? Llámanos al
+              <a
+                href="tel:940413610"
+                style="color: var(--accent-deep); font-weight: 600"
+                >940-413-610</a
+              >.
+            </p>
+          </div>
+
+          <div class="faq-list reveal">
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿Qué es el SEACE y por qué importa? <span class="plus">+</span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  El SEACE es el portal oficial donde el Estado peruano publica
+                  sus contrataciones. Es la fuente para encontrar oportunidades,
+                  pero su interfaz no notifica y las convocatorias suelen cerrar
+                  en horas. Soy Proveedor lo monitorea por ti y te avisa al
+                  instante.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿La app funciona en todo el Perú? <span class="plus">+</span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Sí. Cubrimos todas las regiones — desde Tumbes hasta Tacna —
+                  porque consultamos directamente al SEACE y al SIAF nacional.
+                  En 2026 nuestro foco operativo es Cusco; en 2027 ampliamos a
+                  la macro-región sur (Arequipa, Puno, Apurímac).
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿Necesito ser RNP para usar la app? <span class="plus">+</span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  No para usar el plan Gratis y explorar oportunidades. Para
+                  participar en una licitación sí necesitas estar inscrito en el
+                  Registro Nacional de Proveedores (RNP). Si todavía no lo
+                  estás, te orientamos sobre cómo inscribirte.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿Cómo es la facturación del plan Premium?
+                <span class="plus">+</span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  S/ 29.90 al mes o S/ 199.90 al año (ahorras 44%). El pago se
+                  hace desde la aplicación con tarjeta. Recibes comprobante
+                  electrónico por correo. Puedes cancelar cuando quieras y
+                  mantienes el acceso hasta el fin del período pagado.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿La firma digital tiene validez legal?
+                <span class="plus">+</span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Sí. Estamos integrando una pasarela de firma digital que
+                  cumple con la Ley N° 27269 de Firmas y Certificados Digitales
+                  del Perú, equivalente a una firma manuscrita ante notario.
+                  Esta funcionalidad estará disponible próximamente.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q">
+                ¿Mis datos están seguros? <span class="plus">+</span>
+              </button>
+              <div class="faq-a">
+                <p>
+                  Sí. No vendemos tus datos. Usamos consultas públicas del SEACE
+                  y SIAF, y guardamos solo lo necesario para personalizar tus
+                  alertas. Revisa nuestra
+                  <a href="privacidad.html" style="color: var(--accent-deep)"
+                    >Política de Privacidad</a
+                  >
+                  para el detalle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== CTA BANNER =================== -->
+    <section class="cta-section" id="descargar">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-head">
+            <span class="cta-eyebrow">Pruébala sin compromiso</span>
+            <h2>Empieza por la<br /><em>versión gratis</em>.</h2>
+            <p>
+              Descarga la app, configura tu rubro y deja que las oportunidades
+              del SEACE lleguen solas a tu celular. Si no te suma en una semana,
+              la desinstalas — sin tarjeta, sin contratos.
+            </p>
+          </div>
+          <div class="actions">
+            <a
+              class="store-badge"
+              href="https://apps.apple.com/pe/app/soy-proveedor/id1483157249"
+              style="background: var(--white); color: var(--ink)"
+            >
+              <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M16.4 12.5c0-2.6 2.1-3.9 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.3 2.5 1.3-.1 1.8-.9 3.4-.9 1.6 0 2 .9 3.4.9 1.4 0 2.3-1.2 3.2-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.8 5.1c.7-.9 1.2-2.1 1.1-3.4-1 .1-2.3.7-3 1.6-.7.8-1.3 2.1-1.1 3.3 1.2 0 2.3-.6 3-1.5z"
+                />
+              </svg>
+              <span class="store-text"
+                ><small>Descargar en</small><strong>App Store</strong></span
+              >
             </a>
             <a
+              class="store-badge"
               href="https://play.google.com/store/apps/details?id=pe.abastecimiento.osce&hl=es_PE"
+              style="background: var(--white); color: var(--ink)"
             >
-              <img
-                alt="Disponible en Google Play"
-                src="https://play.google.com/intl/en_us/badges/static/images/badges/es-419_badge_web_generic.png"
-                width="210"
-              />
+              <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M3.6 2.2c-.4.2-.6.6-.6 1.1v17.4c0 .5.2.9.6 1.1l9.7-9.8L3.6 2.2zM14.6 13.3l2.9 1.7-12.6 7.3 9.7-9zM18.7 9.5l-2.3 1.3-2.9-2.9 2.9-2.9 2.3 1.3c1.1.6 1.1 2 0 2.6zM5 1.7l12.6 7.3-2.9 1.7L5 1.7z"
+                />
+              </svg>
+              <span class="store-text"
+                ><small>Disponible en</small><strong>Google Play</strong></span
+              >
             </a>
           </div>
-          <p class="cta-help mt-3">
-            Si tienes dudas, llámanos al 940-413-610.
-          </p>
+          <div class="cta-meta">
+            <span>● Gratis para siempre</span>
+            <span>● Sin tarjeta</span>
+            <span>● iOS &amp; Android</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div data-include="/includes/footer.html"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </section>
 
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-      var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-      (function () {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/5db3b0f5df22d91339a12110/default";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-    <script type="text/javascript">
-      Tawk_API = Tawk_API || {};
-      Tawk_API.visitor = {
-        name: "Soy Proveedor",
+    <!-- =================== FOOTER =================== -->
+    <footer>
+      <div class="container">
+        <div class="foot-top">
+          <h2 class="stack-title" aria-hidden="true" style="text-align: left">
+            <span>Soy</span>
+            <span class="gold">Proveedor®</span>
+          </h2>
+        </div>
+
+        <div class="foot-grid">
+          <div>
+            <div class="brand">
+              <img src="images/logo.png" class="brand-logo" alt="" /> Soy
+              Proveedor
+            </div>
+            <p>
+              La app GovTech para MYPEs que le venden al Estado peruano. Hecho
+              en Cusco, para todo el Perú.
+            </p>
+          </div>
+          <div>
+            <h4>Producto</h4>
+            <ul>
+              <li><a href="#funciones">Funciones</a></li>
+              <li><a href="#capturas">Capturas</a></li>
+              <li><a href="#planes">Planes</a></li>
+              <li><a href="#descargar">Descargar</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Empresa</h4>
+            <ul>
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#faq">Preguntas</a></li>
+              <li><a href="mailto:hola@soyproveedor.pe">Contacto</a></li>
+              <li><a href="tel:940413610">940-413-610</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="terminos.html">Términos y Condiciones</a></li>
+              <li><a href="privacidad.html">Política de Privacidad</a></li>
+              <li><a href="privacidad.html#cookies">Política de Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="foot-bottom">
+          <div>© 2026 Soy Proveedor · Hecho con orgullo en Cusco, Perú</div>
+          <div class="legal-links">
+            <a href="terminos.html">Términos</a>
+            <a href="privacidad.html">Privacidad</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Nav scroll state
+      const nav = document.getElementById("nav");
+      const onScroll = () =>
+        nav.classList.toggle("scrolled", window.scrollY > 8);
+      document.addEventListener("scroll", onScroll, { passive: true });
+      onScroll();
+
+      // Mobile menu
+      const burger = document.getElementById("burger");
+      const menu = document.getElementById("mobileMenu");
+      burger?.addEventListener("click", () => menu.classList.toggle("open"));
+      menu
+        ?.querySelectorAll("a")
+        .forEach((a) =>
+          a.addEventListener("click", () => menu.classList.remove("open")),
+        );
+
+      // FAQ accordions
+      document.querySelectorAll(".faq-q").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          const open = item.classList.contains("open");
+          item.parentElement
+            .querySelectorAll(".faq-item.open")
+            .forEach((o) => o.classList.remove("open"));
+          if (!open) item.classList.add("open");
+        });
+      });
+      document.querySelector(".faq-item")?.classList.add("open");
+
+      // Screenshots carousel
+      const rail = document.getElementById("shotsRail");
+      const advance = (dir) => {
+        if (!rail) return;
+        const card = rail.querySelector(".shot");
+        if (!card) return;
+        const step = card.getBoundingClientRect().width + 32;
+        rail.scrollBy({ left: dir * step, behavior: "smooth" });
       };
+      document
+        .getElementById("shotPrev")
+        ?.addEventListener("click", () => advance(-1));
+      document
+        .getElementById("shotNext")
+        ?.addEventListener("click", () => advance(1));
+
+      // Reveal on scroll
+      if ("IntersectionObserver" in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("in");
+                io.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
+        );
+        document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+      } else {
+        document
+          .querySelectorAll(".reveal")
+          .forEach((el) => el.classList.add("in"));
+      }
     </script>
-    <!--End of Tawk.to Script-->
-    <script src="/js/include.js"></script>
   </body>
 </html>
