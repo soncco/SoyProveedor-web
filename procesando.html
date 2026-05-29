@@ -5,23 +5,44 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Procesando pago — Soy Proveedor</title>
     <meta name="theme-color" content="#3a6b82" />
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16x16.png"
+    />
     <link rel="manifest" href="icons/site.webmanifest" />
     <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#3a6b82" />
     <meta name="msapplication-TileColor" content="#3a6b82" />
     <link rel="stylesheet" href="styles.css" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QNS1TBV2V"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VS5QEY2S2T"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
       gtag("js", new Date());
-      gtag("config", "G-0QNS1TBV2V");
+      gtag("config", "G-VS5QEY2S2T");
     </script>
     <style>
       @keyframes spin {
-        to { transform: rotate(360deg); }
+        to {
+          transform: rotate(360deg);
+        }
       }
       .spinner {
         width: 48px;
@@ -49,7 +70,9 @@
           <a href="index.html#faq">Preguntas</a>
         </nav>
         <div class="nav-cta">
-          <a href="index.html#descargar" class="btn btn-accent btn-sm">Descargar app</a>
+          <a href="index.html#descargar" class="btn btn-accent btn-sm"
+            >Descargar app</a
+          >
         </div>
         <button class="nav-burger" id="burger" aria-label="Menú">
           <span></span>
@@ -63,23 +86,33 @@
       </div>
     </header>
 
-    <main class="legal-page" style="text-align: center; max-width: 480px;">
-      <div style="margin: 48px auto 36px;">
+    <main class="legal-page" style="text-align: center; max-width: 480px">
+      <div style="margin: 48px auto 36px">
         <div class="spinner" aria-label="Cargando"></div>
       </div>
 
-      <h1 style="font-size: clamp(28px, 4vw, 44px);">
+      <h1 style="font-size: clamp(28px, 4vw, 44px)">
         Tu pago se está <em class="italic-accent">procesando</em>…
       </h1>
 
-      <p style="margin-top: 20px; font-size: 17px; color: var(--ink-2); line-height: 1.6;">
-        Estamos verificando la transacción. Esto puede tardar unos segundos. No cierres esta ventana.
+      <p
+        style="
+          margin-top: 20px;
+          font-size: 17px;
+          color: var(--ink-2);
+          line-height: 1.6;
+        "
+      >
+        Estamos verificando la transacción. Esto puede tardar unos segundos. No
+        cierres esta ventana.
       </p>
 
-      <p style="margin-top: 16px; color: var(--ink-2);">
+      <p style="margin-top: 16px; color: var(--ink-2)">
         Si el proceso demora más de un minuto, contáctanos al
         <a href="tel:940413610">940-413-610</a> o escríbenos por
-        <a href="https://wa.me/51940413610" target="_blank" rel="noopener">WhatsApp</a>.
+        <a href="https://wa.me/51940413610" target="_blank" rel="noopener"
+          >WhatsApp</a
+        >.
       </p>
     </main>
 
@@ -88,7 +121,8 @@
         <div class="foot-grid">
           <div>
             <div class="brand">
-              <img src="images/logo.png" class="brand-logo" alt="" /> Soy Proveedor
+              <img src="images/logo.png" class="brand-logo" alt="" /> Soy
+              Proveedor
             </div>
             <p>La app GovTech para MYPEs que le venden al Estado peruano.</p>
           </div>
@@ -105,7 +139,14 @@
             <ul>
               <li><a href="index.html#equipo">Equipo</a></li>
               <li><a href="mailto:hola@soyproveedor.pe">Contacto</a></li>
-              <li><a href="https://wa.me/51940413610" target="_blank" rel="noopener">WhatsApp</a></li>
+              <li>
+                <a
+                  href="https://wa.me/51940413610"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp</a
+                >
+              </li>
               <li><a href="tel:940413610">940-413-610</a></li>
             </ul>
           </div>
@@ -118,7 +159,12 @@
           </div>
         </div>
         <div class="foot-bottom">
-          <div>© 2026 Soy Proveedor · Hecho con orgullo en Cusco, Perú · <a href="https://innovacion.pe" target="_blank" rel="noopener">Innovación.pe</a></div>
+          <div>
+            © 2026 Soy Proveedor · Hecho con orgullo en Cusco, Perú ·
+            <a href="https://innovacion.pe" target="_blank" rel="noopener"
+              >Innovación.pe</a
+            >
+          </div>
           <div class="legal-links">
             <a href="terminos.html">Términos</a>
             <a href="privacidad.html">Privacidad</a>
@@ -129,12 +175,15 @@
 
     <script>
       const nav = document.getElementById("nav");
-      const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 8);
+      const onScroll = () =>
+        nav.classList.toggle("scrolled", window.scrollY > 8);
       document.addEventListener("scroll", onScroll, { passive: true });
       onScroll();
-      document.getElementById("burger")?.addEventListener("click", () =>
-        document.getElementById("mobileMenu").classList.toggle("open")
-      );
+      document
+        .getElementById("burger")
+        ?.addEventListener("click", () =>
+          document.getElementById("mobileMenu").classList.toggle("open"),
+        );
     </script>
   </body>
 </html>
