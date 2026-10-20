@@ -535,6 +535,18 @@ section.tighter {
   flex-wrap: wrap;
   margin-bottom: 24px;
 }
+.hero-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.hero-link:hover {
+  color: var(--ink);
+}
 .hero-meta {
   display: flex;
   align-items: center;
